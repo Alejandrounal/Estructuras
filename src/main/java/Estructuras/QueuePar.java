@@ -9,17 +9,18 @@ package Estructuras;
  *
  * @author Alejandro
  */
-public class Queue <T>{
+public class QueuePar {
     private int front;
     private int tam;
-    private T[] arr;
+    private Partidos[] arr;
     private final int n = 4;
     private int cont;
     private int rear;
-   
-     public Queue() {
+    
+    
+     public QueuePar() {
        front = 0;
-       arr = (T[]) new Object[n]; 
+       arr = new Partidos[n]; 
        rear = 0;
     }
      
@@ -31,7 +32,7 @@ public class Queue <T>{
        return cont >= n;
     } 
     
-    public void enqueue(T item){
+    public void enqueue(Partidos item){
         if(full())
            throw new RuntimeException("Ya esta lleno");
         arr[rear] = item;
@@ -40,7 +41,7 @@ public class Queue <T>{
         rear%=n;
     }
     
-     public T  dequeue(){
+     public Partidos  dequeue(){
         int x = rear; 
         if(empty())
              throw new RuntimeException("Esta vacio");

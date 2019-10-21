@@ -10,7 +10,7 @@ package Estructuras;
  * @author Alejandro
  */
 public class NodeGeneric <T>{
-    private NodeGeneric<T> next;
+    private NodeGeneric<T> next,prev;
     private T data;
 
     public NodeGeneric() {
@@ -36,6 +36,14 @@ public class NodeGeneric <T>{
 
     public void setData(T data) {
         this.data = data;
+    }
+
+    public NodeGeneric<T> getPrev() {
+        return prev;
+    }
+
+    public void setPrev(NodeGeneric<T> prev) {
+        this.prev = prev;
     }
     
    
