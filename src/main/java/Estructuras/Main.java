@@ -134,6 +134,40 @@ public class Main {
     
     ////////////////******************Fin de agregar cosas a la cola enlazada*********************///////////////
     
+    
+    //////////////////////////Inicio prueba binary search tree //////////////////////////////////////////
+    Scanner scanner4; 
+    scanner4 = new Scanner(System.in);
+    int number4;
+    BinarySearchTree tree;
+    tree = new BinarySearchTree();
+    System.out.println(); 
+    System.out.print("Enter a positive integer to insert ");
+    System.out.print("or a negative integer to stop: "); 
+    number4 = scanner4.nextInt(); 
+    while(number4 >= 0) {
+        tree.insertBST(number4); 
+        tree.traverseBST();
+        System.out.println(); 
+    System.out.print("Enter a positive integer to insert ");
+    System.out.print("or a negative integer to stop: "); 
+    number4 = scanner4.nextInt(); 
+    }
+    System.out.println();
+    System.out.print("Enter a positive integer to remove "); 
+    System.out.print("or a negative integer to quit: "); 
+    number4 = scanner4.nextInt(); 
+    while(number4 >= 0) {
+        tree.removeBST(number4); 
+        tree.traverseBST();
+        System.out.println(); 
+        System.out.print("Enter a positive integer to remove ");
+        System.out.print("or a negative integer to quit: "); 
+        number4 = scanner4.nextInt();
+    }
+    System.out.println();
+    System.out.println("End of Program"); 
+    System.out.println();
         }      
     } 
     
