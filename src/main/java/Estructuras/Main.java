@@ -123,13 +123,18 @@ public class Main {
     
     
     ///////////************************Agregar cosas a ala cola enlazada/****************************
-    
+    System.out.println("Aqui inicial la informacion de la cola enlazada");
     LinkedQueue colaE = new LinkedQueue();
     colaE.enqueue(6);
     colaE.enqueue(2);
     colaE.enqueue(9);
+        System.out.println("Aqui deberia tener 3 elementos");
+         System.out.println(colaE.elementos());
     colaE.enqueue(10);
+    colaE.dequeue();
     colaE.enqueue(15);
+        System.out.println("Aqui deberia haber 4 elementos");
+     System.out.println(colaE.elementos());
     colaE.pritnLinkedQueue();
     
     ////////////////******************Fin de agregar cosas a la cola enlazada*********************///////////////
@@ -168,6 +173,34 @@ public class Main {
     System.out.println();
     System.out.println("End of Program"); 
     System.out.println();
+    
+    
+    //////////////////////////////Aqui comienza prueba Priority queue//////////////////////
+    System.out.print("\n\n\n\n\n\n\n\n" + "Aqui comienza prueba de priority queue \n\n\n");
+    
+    Scanner scanner8;
+    scanner8 = new Scanner(System.in);
+    int i8, n8, num8;
+    PriorityQueue pQueue = new PriorityQueue();
+    i8 = 0;
+    System.out.println();
+    System.out.print("Ingrese un numero no negativo  ");
+    System.out.print(" o  -1 para parar");
+    num8 = scanner8.nextInt();
+    while(num8 > -1){
+        pQueue.inserItem(num8);
+        i8++;
+        System.out.print("Ingrese un numero no negativo o -1 para parar");
+        num8 = scanner8.nextInt();
+    }
+    n8 = i8;
+    System.out.println("");
+    System.out.print("Priority Queue = ");
+    for (int i = 0; i < n8; i++) {
+        num8 = pQueue.removeMin();
+        System.out.print(num8 + " ");
+        }
+    System.out.println("\n\n");
         }      
     } 
     

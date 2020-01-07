@@ -67,14 +67,14 @@ public class BinaryExpressionTree {
         System.out.println("");
     }
     /*  ///////////////////////////////////////preorder de la forma larga
-    private void preOrder(Node p){
-        if(p.left != null && p.rigth != null){
-            System.out.println(p.data);
-            preOrder(p.left);
-            preOrder(p.rigth);
-        }else{
-            System.out.println(p.data);
-        }
+        private void preOrder(Node p){
+            if(p.left != null && p.rigth != null){
+                System.out.println(p.data);
+                preOrder(p.left);
+                preOrder(p.rigth);
+            }else{
+                System.out.println(p.data);
+            }
     }*/
     
     //////////Preorder forma corta

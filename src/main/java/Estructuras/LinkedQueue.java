@@ -47,4 +47,12 @@ public class LinkedQueue {
         while(!empty())
             System.out.println(dequeue());
     }
+    public int elementos(){
+        int contador =  1;
+        Node actual = front;
+        while (actual.getNext() != null){
+            actual = actual.getNext();
+        contador++;
+        }return contador;
+       }
 }
