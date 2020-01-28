@@ -10,9 +10,5 @@ package Estructuras;
  * @author Alejandro
  */
 public class HeapSort {
-    public static void main(String[] args) {
-        for (int i = 0; i < 10; i++) {
-            long por = 15133531;
-        }
-    }
+    
 }
